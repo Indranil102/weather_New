@@ -143,6 +143,10 @@ form span{
     font-weight: 600;
     color: aliceblue;
 }
+.weather-forecast-detals img{
+    height: 50px;
+    width: 50px;
+}
 .h4{
     color: aliceblue;
     font-size: x-large;
