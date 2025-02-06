@@ -8,7 +8,7 @@ const Weather = () => {
     const [backimg, setBackImg]= useState(null);
     const [icons, setIcons]= useState({icons:null});
     const [forecast, setForcast]=useState([]);
-    const [timer, setTImer]= useState("")
+    
 
     const search = async (city) => {
         if (!city) {
@@ -96,17 +96,8 @@ const Weather = () => {
     };
 
     useEffect(() => {
-        const updateTime = () => {
-            const now = new Date();
-            const hours = now.getHours();
-            const minutes = now.getMinutes().toString().padStart(2, "0");
-            const day = now.toLocaleString("en-US", { weekday: "long" });
-            const date = now.getDate();
-            const month = now.toLocaleString("en-US", { month: "short" });
-            const year = now.getFullYear().toString().slice(-2);
       
-            setDateTime(`${hours}:${minutes} - ${day}, ${date} ${month} '${year}`);
-        }
+        search('Guna')
       
     }, []);
 
